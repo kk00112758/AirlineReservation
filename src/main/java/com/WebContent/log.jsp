@@ -21,7 +21,7 @@ http://www.roseindia.net/jsp
 
 </tr>
 <tr>
-<td width="100%"><b>&nbsp;Logged in at:&nbsp; <font color="#FF0000">
+<td width="100%"><b>&nbsp;Logged in on:&nbsp; <font color="#FF0000">
 
 
 <%= new java.util.Date() %>
