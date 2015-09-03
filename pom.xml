@@ -38,7 +38,7 @@
         <configuration>
           <filesets>
             <fileset>
-              <directory>>${project.basedir/target</directory>
+              <directory>>${project.basedir/target/</directory>
               <includes>
                 <include>**/*.jar</include>
               </includes>
