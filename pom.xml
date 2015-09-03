@@ -25,17 +25,28 @@
 				<warSourceDirectory>WebContent</warSourceDirectory>
 <failOnMissingWebXml>false</failOnMissingWebXml>
 <finalName>${artifactId}</finalName>
+<outputDirectory>${project.basedir}/MyAppBuild/</outputDirectory>
 				</configuration>
 			</plugin>
 <plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-assembly-plugin</artifactId>
-    <configuration>
-        <descriptor>src/assembly/Assembly.xml</descriptor>
-        <finalName>Airline.zip</finalName>
-    </configuration>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-assembly-plugin</artifactId>
+  <configuration>
+    <descriptors>
+<descriptor>src/assembly/Assembly.xml</descriptor>
+</descriptors>
+<finalName>MyAppBuild</finalName>
+  </configuration>
+  <executions>
+    <execution>
+      <phase>verify</phase>
+      <goals>
+        <goal>single</goal>
+      </goals>
+    </execution>
+  </executions>
 </plugin>
-		</plugins>
+	</plugins>
 	</build>
 	<dependencies>
 		<dependency>
