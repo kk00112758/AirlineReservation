@@ -2,10 +2,3 @@ os: linux
 files:
    - source: /MyAppBuild-project.war
      destination: /usr/local/tomcat7/webapps
-hooks:
-  BeforeInstall:
-    - location: script/start.sh
-      runas: root
-  ApplicationStop:
-    - location: script/stop.sh
-      runas: root
