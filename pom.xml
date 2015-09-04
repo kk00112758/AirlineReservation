@@ -25,27 +25,9 @@
 				<warSourceDirectory>WebContent</warSourceDirectory>
 <failOnMissingWebXml>false</failOnMissingWebXml>
 <finalName>${artifactId}</finalName>
-<outputDirectory>${project.basedir}/MyAppBuild-project/</outputDirectory>
+<outputDirectory>${project.basedir}/</outputDirectory>
 				</configuration>
 			</plugin>
-<plugin>
-  <groupId>org.apache.maven.plugins</groupId>
-  <artifactId>maven-assembly-plugin</artifactId>
-  <configuration>
-    <descriptors>
-<descriptor>src/assembly/Assembly.xml</descriptor>
-</descriptors>
-<outputDirectory>${basedir}/</outputDirectory>
-  </configuration>
-  <executions>
-    <execution>
-      <phase>verify</phase>
-      <goals>
-        <goal>single</goal>
-      </goals>
-    </execution>
-  </executions>
-</plugin>
 	</plugins>
 	</build>
 	<dependencies>
