@@ -4,18 +4,13 @@ files:
      destination: /usr/local/tomcat7/webapps
 permissions:
    - object: /usr/local/tomcat7/webapps
-     pattern: "**"
      owner: root
      group: root
      mode: 755
-     type:
-       - file
 hooks:
   BeforeInstall:
-    - location: script/start
-      timeout: 300
+    - location: script/stop.sh
       runas: root
-  ApplicationStop:
-    - location: script/stop
-      timeout: 300
+  ApplicationStart:
+    - location: script/start.sh
       runas: root
