@@ -35,6 +35,7 @@
     <descriptors>
 <descriptor>src/assembly/Assembly.xml</descriptor>
 </descriptors>
+<outputDirectory>${basedir}/</outputDirectory>
   </configuration>
   <executions>
     <execution>
