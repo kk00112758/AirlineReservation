@@ -25,7 +25,6 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.4</version>
 				<configuration>
-				<warSourceDirectory>/src/main</warSourceDirectory>
 				<failOnMissingWebXml>false</failOnMissingWebXml>
 <finalName>${artifactId}</finalName>
 <outputDirectory>${project.basedir}/</outputDirectory>
