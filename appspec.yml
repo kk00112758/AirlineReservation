@@ -1,5 +1,21 @@
-version: 0.0
 os: linux
 files:
-  - source: /MyAppBuild-project.war
-    destination: /usr/local/tomcat7/webapps
+   - source: /
+     destination: /usr/local/tomcat7/webapps
+permissions:
+   - object: /usr/local/tomcat7/webapps
+     pattern: "**"
+     owner: root
+     group: root
+     mode: 755
+     type:
+       - file
+hooks:
+  BeforeInstall:
+    - location: script/start.sh
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: script/stop.sh
+      timeout: 300
+      runas: root
