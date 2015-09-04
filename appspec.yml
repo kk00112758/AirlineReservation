@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: ./MyAppBuild.war
+  - source: ./MyAppBuild-project.war
     destination: /usr/local/tomcat7/webapps/
 hooks:
   ApplicationStop:
