@@ -12,10 +12,10 @@ permissions:
        - file
 hooks:
   BeforeInstall:
-    - location: script/start.sh
+    - location: script/start
       timeout: 300
       runas: root
   ApplicationStop:
-    - location: script/stop.sh
+    - location: script/stop
       timeout: 300
       runas: root
