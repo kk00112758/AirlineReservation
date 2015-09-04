@@ -1,6 +1,6 @@
 os: linux
 files:
-   - source: /
+   - source: /MyAppBuild-project.war
      destination: /usr/local/tomcat7/webapps
 permissions:
    - object: /usr/local/tomcat7/webapps
