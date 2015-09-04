@@ -2,15 +2,10 @@ os: linux
 files:
    - source: /MyAppBuild-project.war
      destination: /usr/local/tomcat7/webapps
-permissions:
-   - object: /usr/local/tomcat7/webapps
-     owner: root
-     group: root
-     mode: 755
 hooks:
   BeforeInstall:
-    - location: script/stop.sh
-      runas: root
-  ApplicationStart:
     - location: script/start.sh
+      runas: root
+  ApplicationStop:
+    - location: script/stop.sh
       runas: root
