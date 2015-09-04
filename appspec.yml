@@ -1,10 +1,5 @@
 version: 0.0
 os: linux
 files:
-  - source: ./MyAppBuild-project.war
-    destination: /usr/local/tomcat7/webapps/
-hooks:
-  ApplicationStop:
-   - location: cleanup-tomcat.sh
-  ApplicationStart:
-   - location: start-tomcat.sh
+  - source: /MyAppBuild-project.war
+    destination: /usr/local/tomcat7/webapps
