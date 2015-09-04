@@ -9,14 +9,14 @@
 	<fileSets>
 	<fileSet>
 	  <directory>${basedir}/MyAppBuildwar/</directory>
-	  <outputDirectory>/</outputDirectory>
+	  <outputDirectory>${project.basedir}</outputDirectory>
         <includes>
            <include>**/*</include>       
        </includes>
 	</fileSet>
       <fileSet>
 	 <directory>${basedir}/src/AppSpec</directory>
-	 <outputDirectory>/</outputDirectory>
+	 <outputDirectory>${project.basedir}</outputDirectory>
        <includes>
            <include>**/*</include>       
        </includes>

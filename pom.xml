@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.testApp.app</groupId>
-  <artifactId>MyAppBuild</artifactId>
+  <artifactId>MyAppBuild-project</artifactId>
   <version>2.0</version>
   <name>MyAppBuild</name>
   <packaging>war</packaging>
@@ -25,7 +25,7 @@
 				<warSourceDirectory>WebContent</warSourceDirectory>
 <failOnMissingWebXml>false</failOnMissingWebXml>
 <finalName>${artifactId}</finalName>
-<outputDirectory>${project.basedir}/MyAppBuild/</outputDirectory>
+<outputDirectory>${project.basedir}/MyAppBuild-project/</outputDirectory>
 				</configuration>
 			</plugin>
 <plugin>
