@@ -17,7 +17,7 @@ http://www.roseindia.net/jsp
 
 <tr>
 <td width="100%"><font size="6" color
-="#008000">&nbsp;LOGIN SYSTEM - Updated</font></td>
+="#008000">&nbsp;LOGIN SYSTEM</font></td>
 
 </tr>
 <tr>
